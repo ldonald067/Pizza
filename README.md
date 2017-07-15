@@ -1,6 +1,6 @@
 # Pizza
 
-#### Pizza Week 4 Indepedent Project, July 15th 2017
+#### Pizza Last Indepedent Project, July 15th 2017
 
 #### By LaTanya Donaldson
 
