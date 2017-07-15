@@ -44,6 +44,13 @@ Pizza.prototype.price = function() {
 
   }
 
+  if (this.toppings.indexOf("Pepperoni" && "Vegetarian") >= 0) {
+    alert("You can not choose a combination of Pepperoni and Vegetarian");
+    $("#info").hide();
+    $("#responses").hide();
+
+  }
+
   return this.pizzaPrice;
   console.log("total");
 }
