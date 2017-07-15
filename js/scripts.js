@@ -26,7 +26,7 @@ Pizza.prototype.price = function() {
 
   if (this.toppings.indexOf("Peanut Butter") >= 0) {
     this.pizzaPrice += 10;
-    console.log("pb`");
+    console.log("pb");
 
   }
 
@@ -41,17 +41,6 @@ Pizza.prototype.price = function() {
   if (this.toppings.indexOf("Pepperoni") >= 0) {
     this.pizzaPrice += 3;
     console.log("pepp");
-  }
-
-  else if (this.toppings.indexOf("Supreme" && "Pepperoni") >= 0) {
-    alert("You can not choose Supreme and Pepperoni in a combination");
-    $("#responses").hide();
-
-  }
-
-  else if (this.toppings.indexOf("Vegetarian" && "Supreme") >= 0) {
-    alert("You can not choose Vegetarian and Supreme in a combination");
-    $("#responses").hide();
 
   }
 
@@ -74,5 +63,26 @@ $(document).ready(function(){
     });
     var newPizza = new Pizza(resultSize,resultToppings,pizzaPrice);
     newPizza.price();
+    console.log("result");
 
     $("#responses").append("<li>" + "You ordered a " + newPizza.size + " " + newPizza.toppings + " pizza. " + " Your total price is " + newPizza.pizzaPrice + "</li>");
+    console.log("responses");
+
+    var nameInput = $("input#name").val();
+    var addressInput = $("input#address").val();
+    var numberInput = $("input#number").val();
+    console.log("input");
+
+    $(".name").text(nameInput);
+    $(".address").text(addressInput);
+    $(".number").text(numberInput);
+    console.log("text");
+
+    $("#info").show();
+
+    $('#reload').click(function() {
+      location.reload();
+
+    });
+  });
+});

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Pizza Pizza</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Pizza</title>
   </head>
   <body>
     <div class="container">
@@ -14,26 +14,40 @@
       </div>
       <form id="pizza">
         <div class="form-group">
-          <p>What size would you like your pizza to be?</p>
+          <p>What size would you like your pizza:</p>
           <input type="radio" name="size" value="Small">Small.<br>
           <input type="radio" name="size" value="Medium">Medium.<br>
           <input type="radio" name="size" value="Large">Large.<br>
         </div>
         <div class="form-group">
-          <p>Which toppings would you like?</p>
+          <p>Which toppings would you like</p>
           <input type="checkbox" name="toppings" value="Cheese">Cheese.<br>
           <input type="checkbox" name="toppings" value="Vegetarian">Vegetarian.<br>
           <input type="checkbox" name="toppings" value="Supreme">Supreme.<br>
           <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni.<br>
-          <input type="checkbox" name="toppings" value="Fruit">Fruit.<br>
-          <input type="checkbox" name="toppings" value="Bacon">Bacon.<br>
-          <input type="checkbox" name="toppings" value="Artichoke">Artichoke.<br>
           <input type="checkbox" name="toppings" value="Peanut Butter">Peanut butter.<br>
         </div>
-        <button type="submit">Let's get your order</button>
-      </form>
         <ul id="responses">
         </ul>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input id="address" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="number">Phone Number</label>
+          <input id="number" class="form-control" type="text">
+        </div>
+        <button type="submit">Let's get your order</button>
+        <button type="submit" class="btn" id="reload">Refresh</button>
+      </form>
+      <div id="info">
+        <p> Name:  <span class="name"></span>  Address:  <span class="address"></span>  Number:  <span class="number"></span>
+        </p>
+      </div>
     </div>
   </body>
 </html>
