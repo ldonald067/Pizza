@@ -1,0 +1,8 @@
+#info {
+  display: none;
+}
+
+.name, .address, .number {
+  font-style: italic;
+  font-weight: bold;
+}
