@@ -20,7 +20,7 @@ Pizza.prototype.price = function() {
     console.log("lg");
   }
   if (this.toppings.indexOf("Cheese") >= 0) {
-    this.pizzaPrice += 3;
+    this.pizzaPrice += 2;
     console.log("ch");
   }
 
@@ -31,15 +31,15 @@ Pizza.prototype.price = function() {
   }
 
   if (this.toppings.indexOf("Vegetarian") >= 0) {
-    this.pizzaPrice += 2;
+    this.pizzaPrice += 3;
     console.log("veg");
   }
   if (this.toppings.indexOf("Supreme") >= 0) {
-    this.pizzaPrice += 4;
+    this.pizzaPrice += 5;
     console.log("supr");
   }
   if (this.toppings.indexOf("Pepperoni") >= 0) {
-    this.pizzaPrice += 3;
+    this.pizzaPrice += 4;
     console.log("pepp");
 
   }
